@@ -1,10 +1,74 @@
-/* fonts */
+/*-------------- 
+      fonts 
+----------------*/
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
-/* common-style or utilites*/
+/*--------------
+   header-style
+ --------------*/
+
+ header{
+    background-color:#562eff;
+    height: 100px;
+    align-items: center;
+ }
+ nav{
+    height: 100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr); 
+    grid-column-gap: 25px;   
+ }
+
+ .icon{
+    width: 100px;
+    display:flex;
+    justify-content: space-between;
+ }
+
+ header nav img{
+    width: 50px;
+    height:60px;
+    padding-left:100px;
+    padding-top:20px;
+
+ }
+
+ header nav span{
+    color: white;
+    font-size: 25px;
+    padding-top:35px;
+    padding-left: 20px;
+ }
+
+ .profile{
+    display: flex;
+ }
+
+ .profile img{
+    width: 56px;
+    height: 56px;
+ }
+
+ .links{
+     padding-top:30px;
+ }
+
+ .links a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding:20px;
+ }
+
+/*----------------------------
+    common-style or utilites
+ -----------------------------*/
 
 body{
+    margin: 0;
+    padding: 0;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -19,7 +83,7 @@ main{
 
 .container{
     background-color: #fff;
-    width: 870px;
+    width: 900px;
     padding:30px;
     margin-top: 23px;
     border-radius: 9px;
@@ -31,9 +95,13 @@ hr{
     margin-bottom: 23px;
 }
 
-/* top-area-style */
+/*----------------- 
+   top-area-style 
+-------------------*/
 
-/* players-styel */
+/*-----------------
+     players-styel
+ ------------------ */
 
 .Section-title{
     color:#562eff;
@@ -62,7 +130,9 @@ height: 56px;
     font-size: 18px;
 }
 
-/* Blogs-Style */
+/*---------------
+    Blogs-Style 
+-----------------*/
 
 .blogs{
     display: grid;
@@ -99,4 +169,66 @@ height: 56px;
     font-size: 16px;
 }
 
-/* top-area-end */
+/*---------------------
+     top-area-end 
+-----------------------*/
+
+/* ------------------------
+       Course-style
+------------------------ */
+
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 25px;
+}
+
+.course{
+    box-sizing: border-box;
+    border: 1px solid white;
+    border-radius: 16px;
+    box-shadow: 1px 1px 10px 1px;
+    height: 300px;  
+     cursor: pointer;
+
+}       
+
+.course .course-banner img{
+    width: 100%;
+    padding:0;
+    height: 104px;
+}
+
+.all-info{
+    padding: 5px;
+}
+
+.course-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: sans-serif;
+}
+
+.course-author{
+    color: red;
+}
+
+.fa-star{
+    font-size: 12px;
+}
+
+.fa-star.filled{
+    color:#ffc014;
+}
+.fa-star.empty{
+    color:#AEAEAE;
+}
+
+.time{
+    color:rgba(255, 92, 92, 0.918);
+    background-color: rgba(255, 92, 92, 0.32);
+    padding:2px 5px;
+    height: 20px;
+    border-radius: 20px;
+}
