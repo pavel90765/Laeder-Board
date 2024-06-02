@@ -240,6 +240,9 @@ height: 56px;
 /* Mobile Design */
 
 @media only screen and (max-width:688px) {
+    header nav div a{
+        display: none;
+    }
     body{
         margin:10px;
     }
@@ -249,24 +252,20 @@ height: 56px;
     .players{
         grid-template-columns: repeat(2,1fr);
     }
-  .blogs{
-        grid-template-columns: repeat(1,1fr);
-    }
-    .courses{
-        margin-left:70px;
-        grid-template-columns: repeat(1,1fr);
-        width: 50%;
-    }
-    
-    }
-    .player,.blog{
+    .player{
           align-items: center;
           flex-direction: column;
     }
     
-   
-     header{
-         display: none;
-             }
-     
+  .blogs{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .courses{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .course{
+        margin: 20px;
+    }
 }
